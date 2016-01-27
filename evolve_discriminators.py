@@ -164,7 +164,7 @@ class EvolveDiscriminators:
                     for genome in self.feature_list_genomes:
                         net = NEAT.NeuralNetwork()
                         genome.BuildPhenotype(net)
-                        net.Save("/home/dan/solus/solus_design/constructor/networks/net" + str(n) + ".nnet")
+                        net.Save("path/to/dir/net" + str(n) + ".nnet")
                         n += 1
 
                     # datafile = open("discriminator_genomes.pkl", "wb")
